@@ -28,3 +28,14 @@ func StructName(name string, settings config.CombinedSettings) string {
 	}
 	return out
 }
+
+func JSONTagName(name string, settings config.CombinedSettings) string {
+	if settings.Go.JSONCamelCase {
+		parts := strings.Split(name, "_")
+		for i := range parts[1:] {
+			parts[i+1] = strings.Title(parts[i+1])
+		}
+		return strings.Join(parts, "")
+	}
+	return name
+}
