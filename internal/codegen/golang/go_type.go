@@ -1,8 +1,8 @@
 package golang
 
 import (
-	"github.com/kyleconroy/sqlc/internal/compiler"
-	"github.com/kyleconroy/sqlc/internal/config"
+	"github.com/ianberinger/sqlc/internal/compiler"
+	"github.com/ianberinger/sqlc/internal/config"
 )
 
 func goType(r *compiler.Result, col *compiler.Column, settings config.CombinedSettings) string {

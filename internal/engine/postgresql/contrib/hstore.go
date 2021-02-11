@@ -3,8 +3,8 @@
 package contrib
 
 import (
-	"github.com/kyleconroy/sqlc/internal/sql/ast"
-	"github.com/kyleconroy/sqlc/internal/sql/catalog"
+	"github.com/ianberinger/sqlc/internal/sql/ast"
+	"github.com/ianberinger/sqlc/internal/sql/catalog"
 )
 
 func Hstore() *catalog.Schema {
